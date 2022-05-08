@@ -3,7 +3,7 @@
  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝖒𝖞 𝖈𝖍𝖆𝖓𝖓𝖆𝖑 https://www.youtube.com/channel/UCp11N9Fj79c40n_kHAOfL1Q 
  
  
-𝐵𝓇𝓊𝓉𝑒 𝐹𝑜𝓇𝒸𝑒 𝒮𝒮𝐻 , Brute Force Account Gmail , Crack Hash , Enumeration Directory , Scan Ip Of Your Network 
+Brute Force SSH , Brute Force Account Gmail , Crack Hash , Enumeration Directory , Scan Ip Of Your Network 
 Sniffer Network HTTP , Arp Sppofing Attack , Keylogger , Scan Ports
 
 
