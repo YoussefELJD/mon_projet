@@ -40,7 +40,7 @@ def Local_File_Inclusion():
     cookies_str = sys.argv[2]
     cookies = dict(x.split('=') for x in cookies_str.split(';'))
 
-    Path = open('/usr/share/wordlists/SecLists/Fuzzing/LFI/LFI-Jhaddix.txt', 'r')
+    Path = open('LFI-Jhaddix.txt', 'r')
 
     for Files in Path:
         File = Files.rstrip('\n')
