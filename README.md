@@ -4,7 +4,7 @@
  
  
 Brute Force SSH , Brute Force Account Gmail , Crack Hash , Enumeration Directory , Scan Ip Of Your Network 
-Sniffer Network HTTP , Arp Sppofing Attack , Keylogger , Scan Ports
+Sniffer Network HTTP , Arp Sppofing Attack , Keylogger , Scan Ports , LFI
 
 
 this project contains several scripts to facilitate the task of carrying out attacks on a system
